@@ -1,0 +1,35 @@
+/*Global Styles*/
+ 
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+ 
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+.center {text-align:center;}
+.right {text-align:right;}
+
+.shadow { -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
+
+.fadeout { opacity: 1;  transition: opacity .40s ease-in-out; -moz-transition: opacity .40s ease-in-out; -webkit-transition: opacity .40s ease-in-out; }
+.fadeout:hover { opacity: 0.6; }
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.transition-duration(@duration: 0.2s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
